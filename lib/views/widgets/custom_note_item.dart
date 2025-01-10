@@ -3,15 +3,15 @@
 import 'package:flutter/material.dart';
 
 class CustomNoteItem extends StatelessWidget {
-  const CustomNoteItem({super.key});
-
+  const CustomNoteItem({super.key,required this.color});
+  final Color color ;
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.only(top: 24,bottom: 24,left: 16),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
-        color: Color(0xfffFFc80),
+        color: color,
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
