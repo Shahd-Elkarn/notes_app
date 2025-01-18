@@ -6,5 +6,5 @@ import 'package:flutter/material.dart';
 part 'add_note_state.dart';
 
 class AddNoteCubit extends Cubit<AddNoteState> {
-  AddNoteCubit() :super(NotesInitial());
+  AddNoteCubit() :super(AddNoteInitial());
 }
